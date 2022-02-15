@@ -166,6 +166,7 @@ section {
 /* Section Images */
 section#home {
   background: url("../images/landing_page_1.png") no-repeat center/cover;;
+  align-items: bottom;
 }
 
 section#about {
