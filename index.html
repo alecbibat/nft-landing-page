@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon-16x16.png">
     <link rel="manifest" href="images/x-icon/site.webmanifest">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
   </head>
   <body>
     <header>
@@ -64,10 +66,14 @@
       <section id="service">
           <h1>Traits</h1>
           <p class="lead">Every duck is unique! There are a total of x different combinations a duck can be generated in. Each and every duck in the collection has its own personality! </p>
+
       </section>
       <section id="contact">
           <h1>Duck Types</h1>
           <p class="lead">There are 9 different types of duck some are rarer than others!</p>
+
+
+
       </section>
       <section id="roadmap">
         <h1>Roadmap</h1>
@@ -79,5 +85,36 @@
     <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+    </script>
   </body>
 </html>
